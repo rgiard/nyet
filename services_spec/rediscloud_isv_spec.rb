@@ -4,7 +4,7 @@ describe "Managing RedisCloud", :service => true, :appdirect => true do
   let(:app_name) { "rediscloud" }
   let(:namespace) { "redis" }
   let(:plan_name) { "25mb" }
-  let(:service_name) { "rediscloud-dev" }
+  let(:service_name) { "rediscloud" }
 
   it "allows users to create, bind, read, write, unbind, and delete the RedisCloud service" do
     create_and_use_managed_service do |client|

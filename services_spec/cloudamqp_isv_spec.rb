@@ -4,7 +4,7 @@ describe "Managing CloudAMQP", :service => true, :appdirect => true do
   let(:app_name) { "cloudamqp" }
   let(:namespace) { "amqp" }
   let(:plan_name) { "lemur" }
-  let(:service_name) { "cloudamqp-dev" }
+  let(:service_name) { "cloudamqp" }
 
   it "allows users to create, bind, read, write, unbind, and delete the CloudAMQP service" do
     create_and_use_managed_service do |client|

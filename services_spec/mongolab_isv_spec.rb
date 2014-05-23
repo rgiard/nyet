@@ -4,7 +4,7 @@ describe "Managing Mongolab", :service => true, :appdirect => true do
   let(:app_name) { "mongolab" }
   let(:namespace) { "mongodb" }
   let(:plan_name) { "sandbox" }
-  let(:service_name) { "mongolab-dev" }
+  let(:service_name) { "mongolab" }
 
   it "allows users to create, bind, read, write, unbind, and delete the Mongolab service" do
     create_and_use_managed_service do |client|

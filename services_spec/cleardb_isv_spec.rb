@@ -4,7 +4,7 @@ describe "Managing ClearDB", :service => true, :appdirect => true do
   let(:app_name) { "cleardb" }
   let(:namespace) { "mysql" }
   let(:plan_name) { "spark" }
-  let(:service_name) { "cleardb-dev" }
+  let(:service_name) { "cleardb" }
 
   it "allows users to create, bind, read, write, unbind, and delete the ClearDB service" do
     create_and_use_managed_service do |client|

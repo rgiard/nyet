@@ -4,7 +4,7 @@ describe "Managing ElephantSQL", :service => true, :appdirect => true do
   let(:app_name) { "elephantsql" }
   let(:namespace) { "pg" }
   let(:plan_name) { "turtle" }
-  let(:service_name) { "elephantsql-dev" }
+  let(:service_name) { "elephantsql" }
 
   it "allows users to create, bind, read, write, unbind, and delete the ElephantSQL service" do
     create_and_use_managed_service do |client|

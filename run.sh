@@ -2,7 +2,10 @@
 . environment.sh
 . $HOME/.rvm/scripts/rvm
 
-rvm use --ruby-version $RUBY_VERSION
+echo `ruby --version`
+echo rvm use $RUBY_VERSION
+rvm use $RUBY_VERSION
+echo `ruby --version`
 
 type rvm | head -n 1
 rvm user gemsets
